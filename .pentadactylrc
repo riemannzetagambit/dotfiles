@@ -1,0 +1,46 @@
+" should be better for shortcuts
+map , <Leader> 
+
+" firefox was complaining because of the tabmix plus plugin with multi-tab
+set showtabline=multitab
+
+" sets default search engine
+set defsearch=duckduckgo
+
+" make sure you show that damn status line, it's great (go is abbrev for
+" guioptions
+set go+=s
+
+" when searching, highlight all mathces
+set hlfind
+
+" **Pass throughs**
+" set passkeys+=mail.google.com:jkvacrf<CR>,gi
+ autocmd LocationChange mail.google.com :normal! <C-z>
+ autocmd LocationChange http://www.google.com/reader/view/* :normal! <C-z>
+" set passkeys+="http://www.google.com/reader/view/":jk<CR>
+" set passkeys+=mail.google.com:'!#*+-./<C-Down><C-s><Enter>?INU[]acefjk lmnopqrsuvxyz',*a,*n,*r,*s,*t,*u,ga,gc,gd,gi,gl,gs,gt,yo
+" set passkeys+="http://www.google.com/reader/*":'!#*+-./<C-Down><C-s><Enter>?INU[]acefjk lmnopqrsuvxyz',*a,*n,*r,*s,*t,*u,ga,gc,gd,gi,gl,gs,gt,yo
+" the laissez-faire should allowing the changing of focus without interference from pentadactyl (this was the problem when I would reply and then be sent out of
+" the pass-through mode
+set strictfocus+=mail.google.com:laissez-faire
+set strictfocus+="http://www.google.com/reader/*":laissez-faire
+
+
+" making switching between tabs mapped to e and E (easiest to reach, will overwrite some other commands)
+nmap e ;tabnext<CR>
+nmap E ;tabprevious<CR>
+nmap C ;stop<CR>
+nmap I ;tabopen inspbm 
+nmap [ ;tabopen googbooks 
+nmap W ;tabopen physWebmail<CR>
+nmap R ;tabopen http://www.feedly.com/home#my<CR>
+nmap U ;tabopen https://mail.google.com/mail/u/0/?ui=2&shva=1#inbox<CR>
+nmap  ./ ;nohlfind<CR>
+map -builtin ; :
+map -builtin : ;
+
+
+" make sure you show that damn status line, it's great (go is abbrev for
+" guioptions
+set go+=s

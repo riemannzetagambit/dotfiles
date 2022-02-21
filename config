@@ -1,0 +1,19 @@
+Host dev_analysis_david
+    User ubuntu
+    HostName 52.38.113.39
+    IdentityFile ~/.ssh/trace_admin.pem
+
+Host berry_kraken_cluster
+    User trace
+    HostName 52.39.153.16
+    IdentityFile ~/.ssh/trace_admin.pem
+
+Host fungal_cluster
+    User trace
+    HostName 52.41.22.51
+    IdentityFile ~/.ssh/trace_admin.pem
+
+Host trace_file_server
+    User trace
+    HostName 52.37.220.228
+    IdentityFile ~/.ssh/trace_admin.pem

@@ -1,0 +1,29 @@
+sw_volume: 98
+audio_device_state:1:My ALSA Device
+state: play
+current: 14
+time: 302
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:Phish/1993 Rift/02 - Fast Enough for You.mp3
+1:Phish/1993 Rift/03 - Lengthwise.mp3
+2:Phish/1993 Rift/04 - Maze.mp3
+3:Phish/1993 Rift/05 - Sparkle.mp3
+4:Phish/1993 Rift/06 - Horn.mp3
+5:Phish/1993 Rift/07 - The Wedge.mp3
+6:Phish/1993 Rift/08 - My Friend, My Friend.mp3
+7:Phish/1993 Rift/09 - Weigh.mp3
+8:Phish/1993 Rift/10 - All Things Reconsidered.mp3
+9:Phish/1993 Rift/11 - Mound.mp3
+10:Phish/1993 Rift/12 - It's Ice.mp3
+11:Phish/1993 Rift/13 - Lengthwise.mp3
+12:Phish/1993 Rift/14 - The Horse.mp3
+13:Phish/1993 Rift/15 - Silent in the Morning.mp3
+14:Phish/1993 Rift/01 - Rift.mp3
+playlist_end

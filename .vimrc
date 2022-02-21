@@ -1,11 +1,29 @@
 " Vimrc file, http://phuzz.org
-" Nice colorscheme and temp vimrc from online, liked the turn off highlight key mapping with ctrl+N
-" call pathogen#helptags()
-" call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
+" this first section is required by Vundle:
+" https://github.com/VundleVim/Vundle.vim
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'preservim/nerdtree'
+Plugin 'vim-scripts/ScrollColors'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'leshill/vim-json'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 syntax on
-filetype plugin on
-filetype indent on
 
 " Change colorscheme here
 colorscheme distinguished

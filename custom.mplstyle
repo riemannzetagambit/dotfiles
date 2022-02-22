@@ -1,0 +1,41 @@
+###################
+# These configurations are all due to Tyler Barnum-- credit goes to him for everything but the color choices.
+# You can thank him @tylerbarnumphd
+###################
+# Figure
+figure.figsize : 6, 6
+figure.facecolor : white
+
+# Axes
+axes.spines.top : False
+axes.spines.right : False
+
+# Legend
+legend.frameon : True
+legend.framealpha : 0.5
+legend.facecolor : F5F5F5
+legend.edgecolor : None
+legend.fontsize : 14
+
+# Colors
+# Chosen by my brother, Rob Stone
+axes.prop_cycle : cycler('color', ['000',  'b53d93', '5e99d1', 'ef892b', '999999',])
+
+# Font
+font.family : avenir
+axes.titlesize : 14
+axes.labelsize : 14
+xtick.labelsize : 14
+ytick.labelsize : 14
+
+# Scatters
+scatter.edgecolors: face
+
+# Histograms
+hist.bins : 100
+
+# Boxplots
+boxplot.medianprops.color : black
+boxplot.meanprops.color : black
+boxplot.notch : False
+boxplot.showcaps : False

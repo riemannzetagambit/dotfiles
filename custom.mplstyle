@@ -1,5 +1,5 @@
 ###################
-# These configurations are all due to Tyler Barnum-- credit goes to him for everything but the color choices.
+# These configurations are all due to Tyler Barnum-- credit goes to him for everything but the color and font choices.
 # You can thank him @tylerbarnumphd
 ###################
 # Figure
@@ -22,8 +22,10 @@ legend.fontsize : 14
 axes.prop_cycle : cycler('color', ['000',  'b53d93', '5e99d1', 'ef892b', '999999',])
 
 # Font
-font.family : avenir
-axes.titlesize : 14
+# get this from google fonts:
+# https://github.com/google/fonts/tree/main/ofl/sourcesanspro
+font.sans-serif : SourceSansPro
+axes.titlesize : 16
 axes.labelsize : 14
 xtick.labelsize : 14
 ytick.labelsize : 14

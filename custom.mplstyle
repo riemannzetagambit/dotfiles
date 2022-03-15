@@ -22,7 +22,9 @@ legend.fontsize : 14
 axes.prop_cycle : cycler('color', ['000',  'b53d93', '5e99d1', 'ef892b', '999999',])
 
 # Font
-# get this from google fonts:
+# if on Mac, use this nice font (h/t Tyler)
+# font.family : avenir
+# if not on Mac, use this from google fonts:
 # https://github.com/google/fonts/tree/main/ofl/sourcesanspro
 font.sans-serif : SourceSansPro
 axes.titlesize : 16

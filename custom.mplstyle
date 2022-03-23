@@ -3,7 +3,7 @@
 # You can thank him @tylerbarnumphd
 ###################
 # Figure
-figure.figsize : 6, 6
+figure.figsize : 10, 10
 figure.facecolor : white
 
 # Axes

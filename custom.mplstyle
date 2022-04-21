@@ -9,6 +9,7 @@ figure.facecolor : white
 # Axes
 axes.spines.top : False
 axes.spines.right : False
+axes.grid : False
 
 # Legend
 legend.frameon : True

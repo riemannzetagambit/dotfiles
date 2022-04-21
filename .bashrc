@@ -4,12 +4,11 @@
 
 # for homebrew
 PATH="/usr/local/bin::$PATH"
-# sra toolkit setup
-export PATH="$HOME/software/sratoolkit.2.9.6-1-mac64/bin:$PATH"
+# NOTE: below are a few changes you may want to uncomment SPECFICALLY FOR OSX
 # for LOCAL (--user) pip installation, specific to Mac OS X
-export PATH=/Users/dstone/Library/Python/3.9/bin:$PATH
+# export PATH=/Users/dstone/Library/Python/3.9/bin:$PATH
 # export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.9/site-packages
-export PYTHONPATH=$PYTHONPATH:/Users/dstone/Library/Python/3.9/lib/python/site-packages
+# export PYTHONPATH=$PYTHONPATH:/Users/dstone/Library/Python/3.9/lib/python/site-packages
 
 # define colors for bash prompt
 # the extra brackets will fix formatting issues with scrolling through history commands
@@ -36,11 +35,15 @@ fi
 # do this after PS1 has been set
 # git stuff
 # for displaying git info in command line
-GIT_PROMPT_ONLY_IN_REPO=1
-GIT_PROMPT_THEME=Custom
-source ~/.bash-git-prompt/gitprompt.sh
+# get this from https://github.com/magicmonty/bash-git-prompt
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    # note this also requires a .git-prompt-colors.sh file, which is in my dotfiles repo
+	GIT_PROMPT_THEME=Custom
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+# and this you get from my other dotfiles
 source ~/.git-completion.bash
-
 
 # my default editor
 export EDITOR=vim
@@ -48,7 +51,8 @@ export EDITOR=vim
 # for virtualenvwrapper, which gives tab completion for virtualenvs with workon
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
-source /usr/local/bin/virtualenvwrapper.sh
+# NOTE: you may need to change this depending on your installation and OS
+source /home/dstone/.local/bin/virtualenvwrapper.sh
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.

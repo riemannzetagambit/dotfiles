@@ -3,7 +3,7 @@
 # You can thank him @tylerbarnumphd
 ###################
 # Figure
-figure.figsize : 10, 10
+figure.figsize : 12, 12
 figure.facecolor : white
 
 # Axes
@@ -28,7 +28,7 @@ axes.prop_cycle : cycler('color', ['000',  'b53d93', '5e99d1', 'ef892b', '999999
 # if not on Mac, use this from google fonts:
 # https://github.com/google/fonts/tree/main/ofl/sourcesanspro
 font.sans-serif : SourceSansPro
-axes.titlesize : 16
+axes.titlesize : 18
 axes.labelsize : 14
 xtick.labelsize : 14
 ytick.labelsize : 14

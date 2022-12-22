@@ -42,6 +42,23 @@ def get_scale_factor_for_color_property(starting_val, fraction_change_in_propert
 
 
 def get_scaled_color(starting_color, property_to_scale='saturation', fraction_change_in_property=0.05):
+    '''
+    Given an input color, change the color by scaling one of its properties
+
+    :param color: str
+        html or hex color code you want to start with
+    :param property_to_scale: str
+        'hue', 'saturation', or 'luminance'
+    :param fraction_change_in_property: float
+        fraction to change `property_to_scale` by from its starting value implied in `color` to the ending color's value
+
+    :return: str
+        Hex value of the scaled color property
+
+    '''
+    if property_to_scale not in ['saturation', 'hue', 'luminance']:
+        raise ValueError(f'property_to_scale must be in [saturation, hue, luminance]. Got "{property_to_scale}" instead.')
+
     color_start = Color(starting_color)
     if property_to_scale == 'saturation':
         starting_prop = color_start.get_saturation()
@@ -64,7 +81,7 @@ def get_color_gradient_by_property(color, num_steps, property_to_scale='saturati
     saturation, luminance) is scaled by a fractional change `fraction_change_in_property`
 
     :param color: str
-        HTML or hex color code you want to start with
+        html or hex color code you want to start with
     :param num_steps: int
         number of steps to take from start to end in making gradient
     :param property_to_scale: str

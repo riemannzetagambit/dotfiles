@@ -1,32 +1,27 @@
-" Vimrc file, http://phuzz.org
-" this first section is required by Vundle:
-" https://github.com/VundleVim/Vundle.vim
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" an alternate plugin to vundle that ChatGPT suggested
+" start by running this command: 
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" run :PlugInstall afterward
+call plug#begin('~/.vim/plugged')
+" Specify any number of colorschemes from GitHub repositories
+" I got these from browsing https://vimcolorschemes.com/ 
+Plug 'sainnhe/everforest'
+call plug#end()
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'preservim/nerdtree'
-Plugin 'vim-scripts/ScrollColors'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'leshill/vim-json'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on
 
 " Change colorscheme here
-colorscheme distinguished
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:everforest_background = 'hard'
+" For dark version.
+set background=dark
+" For better performance
+let g:everforest_better_performance = 1
+colorscheme everforest
 
 "Setting latex and leader shortcuts
 let mapleader=","

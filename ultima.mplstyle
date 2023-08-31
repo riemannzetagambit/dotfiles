@@ -1,0 +1,46 @@
+###################
+# These configurations match the Ultima Genomics brand/style guide
+# some plot choices mimic the guidelines from Tufte
+###################
+# Figure
+figure.figsize : 15, 12
+figure.facecolor : white
+
+# Axes
+axes.spines.top : False
+axes.spines.right : False
+axes.grid : False
+
+# Legend
+legend.frameon : True
+legend.framealpha : 0.5
+legend.facecolor : F5F5F5
+legend.edgecolor : None
+legend.fontsize : 26
+
+# Colors
+# these are black + primary UG colors + tints 
+axes.prop_cycle : cycler('color', ['000000', '08176B', '00587F', '007E5D', '588D1A', 'BF9B17', '1e32a3', '1485b7', '14b68c', '7ab634', 'd2b33e', '4b5dc5', '47a6d1', '46d0ac', '9bc26d', 'd0be7c', '949dcb', '93bed1', '93d0c0', 'bbcda7', 'd6ceb1', 'd0d2de', 'd1dbe0', 'd0e0dc', 'dde1d7', 'e6e4dc'])
+
+# Font
+# to get matplotlib to fully recognize the Gotham fonts, 
+# I had to edit the ~/.cache/matplotlib/fontlist-vXXX.json file
+# to manually change the names of each font (from plain "Gotham")
+font.family: sans-serif
+font.sans-serif: Gotham Light, Gotham Book, Arial, DejaVu Sans, Bitstream Vera Sans, sans-serif
+axes.titlesize : 30
+axes.labelsize : 24
+xtick.labelsize : 22
+ytick.labelsize : 22
+
+# Scatters
+scatter.edgecolors: black
+
+# Histograms
+hist.bins : 100
+
+# Boxplots
+boxplot.medianprops.color : black
+boxplot.meanprops.color : black
+boxplot.notch : False
+boxplot.showcaps : False
